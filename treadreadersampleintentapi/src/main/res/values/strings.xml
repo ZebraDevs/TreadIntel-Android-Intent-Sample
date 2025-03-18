@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Tread Reader Sample Intent API</string>
+    <string name="measure">Measure</string>
+    <string name="inner">Inner</string>
+    <string name="center">Center</string>
+    <string name="outer">Outer</string>
+    <string name="plunger_32nds">Plunger (32nds)</string>
+    <string name="depth_32nds">Depth (32nds)</string>
+    <string name="confidence_level">Confidence Level</string>
+    <string name="version">Version</string>
+    <string name="close">Close</string>
+    <string name="restart">Restart</string>
+    <array name="plunger_entries">
+        <item>"0.0"</item>
+        <item>"1.0"</item>
+        <item>"2.0"</item>
+        <item>"3.0"</item>
+        <item>"4.0"</item>
+        <item>"5.0"</item>
+        <item>"6.0"</item>
+        <item>"7.0"</item>
+        <item>"8.0"</item>
+        <item>"9.0"</item>
+        <item>"10.0"</item>
+        <item>"11.0"</item>
+        <item>"12.0"</item>
+        <item>"13.0"</item>
+        <item>"14.0"</item>
+        <item>"15.0"</item>
+        <item>"16.0"</item>
+        <item>"17.0"</item>
+        <item>"18.0"</item>
+        <item>"19.0"</item>
+        <item>"20.0"</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sdk_version">SDK Version</string>
+    <string name="service_version">Service Version</string>
+    <string name="hardware_accessory_version">Hardware Accessory Version</string>
+    <string name="algorithm_version">Algorithm Version</string>
+    <string name="firmware_version">Firmware Version</string>
+    <string name="hardware_version">Hardware Version</string>
+    <string name="reset">Reset</string>
+    <string name="tester">Tester</string>
+    <string name="tire_id">Tire ID</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="scan_count">Scan Count</string>
+    <string name="scan_failed">Scan Failed</string>
+    <string name="get_verion_failed">Get version name</string>
+    <string name="scan_speed">Scan Speed</string>
+    <string name="low">Low</string>
+    <string name="short_string">Short</string>
+    <string name="mid">Mid</string>
+    <string name="long_string">Long</string>
+    <string name="high">High</string>
+    <string name="ultra_high">Ultra High</string>
+    <string name="scan_duration">Scan Duration</string>
+    <string name="ttdr_connection_error_title">Connection Error: TTDR Accessory Disconnected</string>
+    <string name="ttdr_connection_error">Encountered an unexpected disconnection while reading data from the TTDR Accessory.</string>
+</resources>

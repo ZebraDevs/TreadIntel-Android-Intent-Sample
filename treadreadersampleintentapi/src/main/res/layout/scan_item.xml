@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/text_input_bg"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tire_id"
+            android:textColor="@color/disable"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" : "
+            android:textColor="@color/disable"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvTireId"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:textColor="@color/enable"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/text_light"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tvInnerDepth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/text_dark"
+                android:gravity="center"
+                android:text="0.0"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/indicatorInner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_dark"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/indicatorInner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/enable"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/indicatorInner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/disable"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/text_light"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tvCenterDepth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/text_dark"
+                android:gravity="center"
+                android:text="0.0"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/indicatorCenter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_dark"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/indicatorCenter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/enable"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/indicatorCenter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/disable"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/text_light"
+            android:layout_marginHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/tvOuterDepth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/text_dark"
+                android:gravity="center"
+                android:text="0.0"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/indicatorOuter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_dark"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/indicatorOuter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/enable"
+                    android:visibility="invisible"/>
+                <ImageView
+                    android:id="@+id/indicatorOuter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/disable"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

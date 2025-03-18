@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.zebra.treadreadersampleintentapi"
+        minSdkVersion 30
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+                outputFileName = new File("TreadDepthReaderIntentAPISampleApp-" + variant.versionName + ".apk");
+            }
+        }
+        debug {
+            buildConfigField "String", 'MAJOR_VERSION', '"1"'
+            buildConfigField "String", 'MINOR_VERSION', '"0"'
+            buildConfigField "String", 'BUILD_VERSION', '"0"'
+            buildConfigField "String", 'HOT_FIX_VERSION', '"0"'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", 'MAJOR_VERSION', '"1"'
+            buildConfigField "String", 'MINOR_VERSION', '"0"'
+            buildConfigField "String", 'BUILD_VERSION', '"0"'
+            buildConfigField "String", 'HOT_FIX_VERSION', '"0"'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.dagger:dagger:2.44.2'
+    implementation 'com.opencsv:opencsv:4.4'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.44.2'
+
+    implementation 'androidx.room:room-runtime:2.5.2'
+    annotationProcessor 'androidx.room:room-compiler:2.5.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.6.1'
+}

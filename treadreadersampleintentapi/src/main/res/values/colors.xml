@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_green">#3fbf04</color>
+    <color name="gray">#8c8f8c</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="background">#DDE6ED</color>
+    <color name="text_light">#F0F2F7</color>
+    <color name="disable">#9DB2BF</color>
+    <color name="enable">#526D82</color>
+    <color name="text_dark">#27374D</color>
+
+    <color name="scan_btn">#ffbf00</color>
+
+    <color name="low">#ff9999</color>
+    <color name="mid">#ffffb3</color>
+    <color name="mid2">#ffff80</color>
+    <color name="high">#8cd98c</color>
+    <color name="high2">#66cc66</color>
+    <color name="high3">#40bf40</color>
+</resources>

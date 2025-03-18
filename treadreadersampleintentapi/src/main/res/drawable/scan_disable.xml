@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/disable" />  <!-- You can change the color here -->
+    <corners android:radius="5dp" /> <!-- Here is the 5dp radius -->
+    <stroke android:width="2dp" android:color="@color/disable"/> <!-- Optional: if you want a border for the rectangle -->
+</shape>
